@@ -1,0 +1,126 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 100px;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+  margin: 20px;
+  padding: 1px;
+}
+
+.page-item {
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 0.2vmax 0.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 1vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(59, 42, 207);
+}
+
+.page-item:hover .page-link {
+  color: rgb(2, 2, 2);
+}
+
+.pageItemActive {
+  background-color: rgb(59, 42, 207);
+}
+
+.pageLinkActive {
+  background-color: white;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 20vmax;
+  left: 2.5vmax;
+}
+.cate {
+  position: relative;
+  top: 40px;
+}
+
+.categoryBox {
+  padding: 2%;
+  position: relative;
+  left: -14px;
+  top: 40px;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 1vmax "Roboto";
+  margin: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: rgb(71, 99, 255);
+}
+
+.filterBox > fieldset {
+  border: none;
+}
+.rating {
+}
+.filterBox > fieldset {
+  border: none;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50vh;
+    position: initial;
+  }
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}

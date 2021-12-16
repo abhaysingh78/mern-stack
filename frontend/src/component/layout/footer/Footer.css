@@ -1,0 +1,76 @@
+footer {
+  margin-top: 7vmax;
+  padding: 2vmax;
+  background-color: rgb(202, 202, 202);
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  /* height: 300px; */
+}
+
+.leftFooter {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > h4 {
+  font-family: "Roboto";
+  font-size: 0.9vmax;
+}
+.leftFooter > p {
+  text-align: center;
+  font-size: 1vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.leftFooter > img {
+  position: relative;
+  top: 10px;
+  width: 100px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.leftFooter .appstore {
+  position: relative;
+  top: -20px;
+}
+
+.midFooter {
+  width: 60%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  color: rgb(46, 46, 241);
+  font-size: 4vmax;
+  font-family: "Roboto";
+  /* color: #eb4034; */
+}
+
+.midFooter > p {
+  max-width: 60%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+}
+
+.icons {
+  font-size: 50px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.rightFooter {
+  width: 20%;
+}
+
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  text-decoration: underline;
+  position: relative;
+  right: -25px;
+}
